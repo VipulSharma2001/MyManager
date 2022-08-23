@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PolicyActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/terms_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/terms_toolbar"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/Base.Theme.AppCompat.Light"
+            app:titleTextColor="#FFFFFF">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POLICY"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/terms_appbar">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/policy"
+        android:textColor="@android:color/black"/>
+    </ScrollView>
+
+</RelativeLayout>
